@@ -1,0 +1,18 @@
+# Image Board Engine docker-compose file
+
+version: "3.7"
+services: 
+  ibedjango:
+    # The Django container
+    build:
+      context: "./"
+    entrypoint:
+      - python
+      - manage.py
+      - runserver
+      - 0:8000
+    ports:
+      - "12345:8000"
+    volumes:
+      - "./:/imgboardeng/"
+    working_dir: /imgboardeng/
