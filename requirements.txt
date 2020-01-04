@@ -1,0 +1,8 @@
+Django>=2.2,<3
+pytest
+pytest-cov
+pytest-django
+pytest-xdist
+sorl-thumbnail>=12.5,<13
+django-bootstrap-modal-forms>=1.5,<2.0
+Pillow>=7.0,<8
